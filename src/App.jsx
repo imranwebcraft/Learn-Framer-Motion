@@ -14,6 +14,14 @@ export default function App() {
 				animate={{ opacity: 1, scale: 1 }}
 				transition={{ duration: 0.5 }}
 			/>
+			<motion.div
+				className=" w-[100px] h-[100px] rounded-full bg-purple-500"
+				animate={{
+					scale: [1, 2, 2, 1, 1],
+					rotate: [0, 0, 250, 180, 360],
+					borderRadius: ['20%', '50%', '75%', '100%', '0%'],
+				}}
+			/>
 		</h1>
 	);
 }
